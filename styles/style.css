@@ -1,7 +1,7 @@
 :root {
   --base: #ffc600;
   --spacing: 10px;
-  --blur: 10px;
+  --blur: 0;
 }
 
 body,
@@ -11,7 +11,8 @@ html {
 }
 
 body {
-    font-family: 'Kanit', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #f2f2f2;
 }
 
 * {
@@ -21,12 +22,15 @@ body {
 }
 
 .wrapper {
+  padding-top: 30px;
     height: 100%;
     text-align: center;
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  font-size: 45px;
+  line-height: 1;
 }
 
 .accent {
@@ -36,8 +40,12 @@ body {
 .controls {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 650px;
   margin: 0 auto 50px;
+}
+
+.controls__label {
+  font-size: 25px;
 }
 
 .controls__input {
@@ -48,4 +56,161 @@ body {
   padding: var(--spacing);
   background-color: var(--base);
   filter: blur(var(--blur));
+}
+
+/*custom input[type=range]*/
+
+.controls__input[type=range] {
+-webkit-appearance: none;
+  width: 50%;
+}
+ 
+.controls__input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+ 
+.controls__input[type=range]:focus {
+  outline: none;
+}
+ 
+.controls__input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.controls__input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  background: #747a92;
+  cursor: pointer;
+  box-shadow: 0 0 2px 1px gray;
+  margin-top: -7px;
+}
+
+.controls__input[type=range]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  background: #747a92;
+  cursor: pointer;
+  box-shadow: 0 0 2px 1px gray;
+}
+
+.controls__input[type=range]::-ms-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  background: #747a92;
+  cursor: pointer;
+  box-shadow: 0 0 2px 1px gray;
+}
+
+.controls__input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: inset 0 0 2px 1px grey;
+  background: lightgray;
+  border-radius: 3px;
+}
+
+.controls__input[type=range]:focus::-webkit-slider-runnable-track {
+  background: lightgray;
+}
+
+.controls__input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: inset 0 0 2px 1px grey;
+  background: lightgray;
+  border-radius: 3px;
+}
+
+.controls__input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+.controls__input[type=range]::-ms-fill-lower {
+  background: lightgray;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: inset 0 0 2px 1px grey;
+}
+
+.controls__input[type=range]:focus::-ms-fill-lower {
+  background: lightgray;
+}
+
+.controls__input[type=range]::-ms-fill-upper {
+  background: lightgray;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 1px #000000;
+}
+
+.controls__input[type=range]:focus::-ms-fill-upper {
+  background: lightgray;
+}
+
+.controls__input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  box-shadow: inset 0 0 2px 1px grey;
+  background: lightgray;
+  border-radius: 3px;
+}
+ 
+.controls__input[type=range]:focus::-webkit-slider-runnable-track {
+  background: lightgray;
+}
+ 
+.controls__input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: inset 0 0 2px 1px grey;
+  background: lightgray;
+  border-radius: 3px;
+}
+ 
+.controls__input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+.controls__input[type=range]::-ms-fill-lower {
+  background: lightgray;
+  border-radius: 3px;
+  box-shadow: inset 0 0 2px 1px grey;
+}
+
+.controls__input[type=range]:focus::-ms-fill-lower {
+  background: lightgray;
+}
+
+.controls__input[type=range]::-ms-fill-upper {
+  background: lightgray;
+  border-radius: 3px;
+  box-shadow: inset 0 0 2px 1px grey;
+}
+
+.controls__input[type=range]:focus::-ms-fill-upper {
+  background: lightgray;
 }
