@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>CSS-variables</title>
+</head>
+<body>
+    <main class="wrapper">
+        <h1 class="title">Update CSS variables with <span class="accent">JS</span></h1>
+        <div class="controls">
+            <div class="controls__spacing">
+                <label class="controls__label">Spacing:</label>
+                <input class="controls__input" type="range" name="spacing" min="10" max="100" value="10" data-sizing="px">
+            </div>
+            <div class="controls__blur">
+                <label class="controls__label">Blur:</label>
+                <input class="controls__input" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+            </div>
+            <div class="controls__color">
+                <label class="controls__label">Color:</label>
+                <input class="controls__input" type="color" name="base" value="#ffc600">
+            </div>
+        </div>
+        <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" alt="" class="img">
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

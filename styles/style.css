@@ -1,0 +1,51 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100%;
+    text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.accent {
+  color: var(--base);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto 50px;
+}
+
+.controls__input {
+  vertical-align: middle;
+}
+
+.img {
+  padding: var(--spacing);
+  background-color: var(--base);
+  filter: blur(var(--blur));
+}
